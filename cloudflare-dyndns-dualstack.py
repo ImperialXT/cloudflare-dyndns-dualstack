@@ -54,12 +54,6 @@ def do_dns_update(cf, zone_name, zone_id, dns_name, ip_address, ip_address_type)
             # we only deal with A / AAAA records
             continue
 
-        if ip_address_type != old_ip_address_type:
-            # only update the correct address type (A or AAAA)
-            # we don't see this becuase of the search params above
-            print('IGNORED: %s %s ; wrong address family' % (dns_name, old_ip_address))
-            continue
-
         if ip_address == old_ip_address:
             print('UNCHANGED: %s %s' % (dns_name, ip_address))
             updated = True
