@@ -11,7 +11,7 @@ I wrote this because I couldn't find anything that supports doing both IPv4 and 
 Dependencies
 ------------
 
-You'll need a python interpreter along with the requests and cloudflare modules:
+You'll need a python interpreter along with the requests, netifaces and cloudflare modules:
 
 You can install them with `pip` :
 
